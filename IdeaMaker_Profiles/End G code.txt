@@ -1,0 +1,6 @@
+M104 S0 ;extruder heater off
+M140 S0 ;heated bed heater off (if you have it)
+G91 ;relative positionion
+G1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+10 E-5 F9000 ;move Z up and retract filament even more
+M84 ;steppers off
